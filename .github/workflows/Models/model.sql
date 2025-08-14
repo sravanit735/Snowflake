@@ -1,2 +1,2 @@
 select *
-from {{ source('SALES_SCHEMA','COSTS','CUSTOMERS') }}
+from {{ source('SALES_SCHEMA','COSTS') }}

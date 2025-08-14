@@ -1,11 +1,11 @@
-name: DBT_SNOWFLAKE        # Change this to your project name
+name: DBT_SNOWFLAKE # Change this to your project name
 version: 1.0.0
 config-version: 2
 
 # This should match the profile name in dbt Cloud connection settings
 profile: Snowflake
 
-model-paths: [".github/workflows/Models"]           # Folder where your models are stored
+model-paths: [".github/workflows/Models"] # Folder where your models are stored
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
 macro-paths: ["macros"]
@@ -13,12 +13,12 @@ seed-paths: ["seeds"]
 snapshot-paths: ["snapshots"]
 
 # Optional: global configs
-target-path: "target_Snowflake"             # Where compiled SQL is stored
+target-path: "target_Snowflake" # Where compiled SQL is stored
 clean-targets: ["target", "dbt_modules"]
 
 models:
-  DBT_SNOWFLAKE:           # Must match the "name" at top
-    +materialized: view           # Default materialization for models
+  DBT_SNOWFLAKE: # Must match the "name" at top
+    +materialized: view # Default materialization for models
     staging:
       +materialized: view
     marts:
