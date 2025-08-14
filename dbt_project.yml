@@ -5,7 +5,7 @@ config-version: 2
 # This should match the profile name in dbt Cloud connection settings
 profile: Snowflake
 
-model-paths: ["models"]           # Folder where your models are stored
+model-paths: [".github/workflows/Models"]           # Folder where your models are stored
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
 macro-paths: ["macros"]

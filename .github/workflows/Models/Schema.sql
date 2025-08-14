@@ -1,9 +1,6 @@
-version: 2
+version:2
 
-sources:
-  - name: SALES_SCHEMA
-    database: SALES_DATABASE   # Your Snowflake DB
-    schema: SALES_SCHEMA             # Your Snowflake schema
-    tables:
-      - name: COSTS
-	  - name: CUSTOMERS
+sources: - name:sales_schema
+database:sales_database  # Your Snowflake DB
+schema:sales_schema  # Your Snowflake schema
+tables: - name:costs - name:customers
